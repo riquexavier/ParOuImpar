@@ -3,26 +3,30 @@
 
 int main()
 {
-    int qtd, n, i;
-    scanf("%i %i", &qtd, &n);
+    int qtd, n, i=0;
+    scanf("%i", &qtd);
 
-    for ()
-    while(qtd
-    {
-        if (n == 0)
-        {
+    while(qtd>i){
+        scanf("%i", &n);
+        i++;
+
+        if(n==0){
             printf("NULL\n");
         }
-        else if (n > 0)
-        {
+        else if(n>0 && n%2==0){
+            printf("EVEN POSITIVE\n");
+        }
+        else if(n<0 && n%2==0){
+            printf("EVEN NEGATIVE\n");
+        }
+        else if(n>0 && n%2!=0){
             printf("ODD POSITIVE\n");
         }
-        else
-        {
-            printf("ODD NEGATITIVE\n");
+        else if(n<0 && n%2!=0){
+            printf("ODD NEGATIVE\n");
         }
-        scanf("%i", &n);
     }
+
     system("pause");
     return 0;
 }
